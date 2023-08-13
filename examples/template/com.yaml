@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: EntityCatalogInfo
+metadata:
+  name: '{{ name }}'
+spec:
+  entityKinds:
+    - apiVersion: backstage.io/v1alpha1
+      kind: Component
+      metadata:
+        schema:
+          properties:
+            name:
+              type: string
+            description:
+              type: string
+            owner:
+              type: string
+            version:
+              type: string
+            Gender:
+              type: string
+            # Add more metadata fields here
+      spec:
+        type: component
+
+      
+
